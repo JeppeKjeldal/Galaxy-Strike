@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float yClampRange = 5f;
 
     [SerializeField] float controlRollFactor = 20f;
+    [SerializeField] float rotationSpeed = 5f;
 
     private Vector2 movement;
 
@@ -38,6 +39,6 @@ public class PlayerMovement : MonoBehaviour
     private void PrcessRotation()
     {
         Quaternion targetRotation = Quaternion.Euler(0f, 0f, -controlRollFactor * movement.x);
-        transform.localRotation = targetRotation;
+        transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
 }
