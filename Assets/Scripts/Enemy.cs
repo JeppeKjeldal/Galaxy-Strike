@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem destroyEffect;
+
     private void OnParticleCollision(GameObject other)
     {
-        Debug.Log("Enemy hit by particle system");
+        Instantiate(destroyEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }
