@@ -1430,6 +1430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda46c43d97ed0341af1f942f2b28464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  destoryEffect: {fileID: 3132239002142658742, guid: 144bfb5ef8376e14196d2b257f11375b, type: 3}
 --- !u!1 &877730999
 GameObject:
   m_ObjectHideFlags: 0
