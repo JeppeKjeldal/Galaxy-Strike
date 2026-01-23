@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class CollisionHandler : MonoBehaviour
 {
+    [SerializeField] ParticleSystem collisionEffect;
+
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log($"Collision detected with object: {other.gameObject.name}");
+        Instantiate(collisionEffect, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }
