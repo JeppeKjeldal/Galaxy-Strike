@@ -648,6 +648,38 @@ Transform:
   - {fileID: 659555407}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &569306813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 569306814}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &569306814
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569306813}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 915.6008, y: 0, z: 1340.9573}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1383049874}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &659555404
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,6 +1086,7 @@ GameObject:
   m_Component:
   - component: {fileID: 877731001}
   - component: {fileID: 877731000}
+  - component: {fileID: 877731002}
   m_Layer: 0
   m_Name: Master Timeline
   m_TagString: Untagged
@@ -1078,15 +1111,25 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -8199425603306699981, guid: d3425d7b66fd77644b7de58213b2c5f4, type: 2}
     value: {fileID: 163468731}
+  - key: {fileID: -8431230664149254453, guid: d3425d7b66fd77644b7de58213b2c5f4, type: 2}
+    value: {fileID: 1383049876}
   m_ExposedReferences:
     m_References:
+    - 5284250c09ff7154eaf91023f730e579: {fileID: 232286582}
+    - fcc6584a26de7d94f9d9518b33193a60: {fileID: 232286582}
+    - 979112791f5b9b04683f41c40ac68637: {fileID: 232286582}
     - 6fd7356e9c6e3a04fa1e7e31cf351dfd: {fileID: 0}
     - 1713bcd7871723043aba4b74633fa940: {fileID: 0}
     - 6714b2e9c25e22c43a20bae666c6b9f1: {fileID: 0}
     - 2ed12ad8a203fc640a99f881068e57bf: {fileID: 1308499139}
     - e76a68dd43140cc49a211cd47a143055: {fileID: 0}
+    - fc179e202ba5c4a48a9d65298513d02d: {fileID: 232286582}
     - 7f6684130c17206498bb3f8f82f6da8d: {fileID: 232286582}
+    - 2b29f4e60078ccf4da97c7608a18e6fa: {fileID: 232286582}
     - 56e9ffb443a5eed4babc9da8e12de145: {fileID: 1940879140}
+    - 3204911104fbed745809e875265110ad: {fileID: 232286582}
+    - 7e54b132e1cd4fa4cb223d2fe4e4c621: {fileID: 232286582}
+    - 39a6221def1349b4db004c2cea18173b: {fileID: 232286582}
     - da97f6639efcd364bb012daf17539df9: {fileID: 0}
     - e33d3e438756d854999250f02ed1ccd3: {fileID: 0}
     - fcab1afa47ee385419171835dd3c5195: {fileID: 0}
@@ -1106,6 +1149,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1274941268}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &877731002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877730999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalReceiver
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: ac3941049dd6d3542aba072cc6464470, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1383049875}
+          m_TargetAssemblyTypeName: DialogueLines, Assembly-CSharp
+          m_MethodName: NextDialogueLine
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1084727278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,6 +1447,92 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1383049873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1383049874}
+  - component: {fileID: 1383049875}
+  - component: {fileID: 1383049876}
+  m_Layer: 0
+  m_Name: Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1383049874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383049873}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 569306814}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1383049875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383049873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60027bbdcafd919459da6c208afee595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueLines
+  dialogueLines:
+  - 'Nehpets: We''re glad to have you here Lieutenant.  We could really use your
+    help!'
+  - 'Nehpets: Like shooting fish in a barrel! '
+  - 'Nehpets: It''s a trap!  Get out of there. '
+  - 'Kcir: Crikey!  Looks like you could use a hand. '
+  - 'Nehpets: Never thought I''d see your face around here general...'
+  - 'Kcir: Righteo let''s finish this once and for all. '
+  - 'Kcir: Struth!  Looks like the galaxy just got a little more safe.'
+  - 'Nehpets: Yeeeehaw!!  You did it!'
+  dialogueText: {fileID: 232286584}
+--- !u!114 &1383049876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383049873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalReceiver
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: ac3941049dd6d3542aba072cc6464470, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1383049875}
+          m_TargetAssemblyTypeName: DialogueLines, Assembly-CSharp
+          m_MethodName: NextDialogueLine
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1940879140 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6362508964119128922, guid: f0b62098af1401b428813b5f2d068177, type: 3}
@@ -1494,3 +1653,4 @@ SceneRoots:
   - {fileID: 737759993}
   - {fileID: 1364282903}
   - {fileID: 1274941268}
+  - {fileID: 569306814}
