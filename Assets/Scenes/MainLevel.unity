@@ -1299,23 +1299,31 @@ PlayableDirector:
     m_References:
     - 5284250c09ff7154eaf91023f730e579: {fileID: 232286582}
     - fcc6584a26de7d94f9d9518b33193a60: {fileID: 232286582}
+    - 97d8ebdc42af0ca4588226aca1d4f7a8: {fileID: 2037731050}
+    - 7e8c3c414f551694f9d1e6a49a2c431c: {fileID: 2037731050}
     - 979112791f5b9b04683f41c40ac68637: {fileID: 232286582}
     - 6fd7356e9c6e3a04fa1e7e31cf351dfd: {fileID: 0}
     - 1713bcd7871723043aba4b74633fa940: {fileID: 0}
     - 6714b2e9c25e22c43a20bae666c6b9f1: {fileID: 0}
     - 2ed12ad8a203fc640a99f881068e57bf: {fileID: 1308499139}
     - e76a68dd43140cc49a211cd47a143055: {fileID: 0}
+    - aa625c9a39ecfed4eba8012714842001: {fileID: 1471181746}
     - fc179e202ba5c4a48a9d65298513d02d: {fileID: 232286582}
+    - b633615c60389ca4787f9f9bc444e710: {fileID: 2037731050}
     - 7f6684130c17206498bb3f8f82f6da8d: {fileID: 232286582}
     - 2b29f4e60078ccf4da97c7608a18e6fa: {fileID: 232286582}
     - 56e9ffb443a5eed4babc9da8e12de145: {fileID: 1940879140}
     - 3204911104fbed745809e875265110ad: {fileID: 232286582}
+    - bef7df83583332f4581f8f14a9f5e842: {fileID: 2037731050}
     - 7e54b132e1cd4fa4cb223d2fe4e4c621: {fileID: 232286582}
     - 39a6221def1349b4db004c2cea18173b: {fileID: 232286582}
     - da97f6639efcd364bb012daf17539df9: {fileID: 0}
+    - 8eef2bc65cd5557438c8450247f68e70: {fileID: 1471181746}
     - e33d3e438756d854999250f02ed1ccd3: {fileID: 0}
+    - 85b8de7f3422166408f801ef327ea1d2: {fileID: 1471181746}
     - fcab1afa47ee385419171835dd3c5195: {fileID: 0}
     - 395e82363d565564db08c097f2fe6f4a: {fileID: 0}
+    - 2c9e9845737fc904b9ded009bb7e9a08: {fileID: 2037731050}
 --- !u!4 &877731001
 Transform:
   m_ObjectHideFlags: 0
@@ -2270,7 +2278,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -125, y: 125}
+  m_AnchoredPosition: {x: -125, y: 149.6}
   m_SizeDelta: {x: 225, y: 225}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1939796771
